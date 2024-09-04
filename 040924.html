@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <button id="click-btn">Date in standard form</button>
+    <button id="click-btn1">Local form</button>
+    <button id="click-btn2">year</button>
+    <button id="click-btn3">month</button>
+    <script>
+        // p1=parseInt(prompt("Enter  number 1"))
+        // p2=parseInt(prompt("Enter  number 2"))
+        // op=prompt("Enter the operation")
+        // arithmeticop(p1,p2,op)
+        // arithmetic(p1,p2)
+
+        // function arithmetic(p1,p2){
+        //    document.write("sum is="+(p1+p2))
+        //    document.write("difference is="+(p1-p2))
+        //    document.write("product is="+(p1*p2))
+        //    document.write("quotient is="+(p1/p2))
+        // }
+        // function arithmeticop(p1,p2,op){
+        //   if(op ==='add'){
+        //     document.write("sum is="+(p1+p2))
+        //   }
+        //   else if(op ==='mul'){
+        //     document.write("product is="+(p1*p2))
+        //   }
+        //  else if(op ==='div'){
+        //    document.write("quotient is="+(p1/p2))
+        //   }
+        //  else {
+        //     document.write("difference is="+(p1-p2))
+        //   }
+        // }
+//        var a=10
+//        function f(){
+// var b=20
+// document.write(a,b);
+// a=25;
+
+//        }
+// f();
+// document.write(a);
+// let a=10
+// function add()
+// {
+
+//     let b=20
+//     if(b>10){
+// let c=30
+//         document.write(a+"<br>")
+//         document.write(b+"<br>")
+//         document.write(c+"<br>")
+//     }
+// }
+const clickBtn=document.getElementById('click-btn')
+const clickBtn1=document.getElementById('click-btn1')
+const clickBtn2=document.getElementById('click-btn2')
+const clickBtn3=document.getElementById('click-btn3')
+const date=new Date();
+clickBtn.onclick=function(){
+
+document.write(date+"<br>")
+};
+clickBtn1.ondblclick=function(){
+alert("hi")
+    //document.write(date.toLocaleString()+"<br>")
+};
+clickBtn2.onmouseup=function(){
+
+    document.write(date.getFullYear()+"<br>")
+};
+clickBtn3.onmousedown=function(){
+    document.write(date.getMonth()+"<br>")
+};
+
+
+
+// document.write(date.getDate()+"<br>")
+// document.write(date.getHours()+"<br>")
+// document.write(date.getMinutes()+"<br>")
+// document.write(date.getSeconds()+"<br>")
+
+
+    </script>
+    
+</body>
+</html>
