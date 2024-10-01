@@ -1,0 +1,54 @@
+//- extend lyout 
+//- block content 
+//-     body 
+//-         h1 Contact Form
+//-         p Please fill out the form below to get in touch with us. We’ll respond shortly!
+
+//-         form(action="/result", method="POST", class="form-container")
+//-             label(for="name") Name: 
+//-             input(type="text", name="name", required, class="input-field")
+//-             br
+            
+//-             label(for="email") Email:
+//-             input(type="email", name="email", required, class="input-field")
+//-             br
+            
+//-             label(for="age") Age:
+//-             input(type="number", name="age", min="1", required, class="input-field")
+//-             br
+            
+//-             label(for="gender") Gender:
+//-             select(name="gender", required, class="input-field")
+//-                 option(value="") Select your gender
+//-                 option(value="male") Male
+//-                 option(value="female") Female
+//-                 option(value="other") Other
+//-             br
+            
+//-             label(for="phone") Phone (optional):
+//-             input(type="tel", name="phone", class="input-field", placeholder="Enter your phone number")
+//-             br
+            
+//-             label(for="message") Message:
+//-             textarea(name="message", required, class="input-field", rows="4", placeholder="Enter your message here...")
+//-             br
+
+//-             label(for="terms")
+//-                 input(type="checkbox", name="terms", required) I agree to the terms and conditions
+//-             br
+
+//-             button(type="submit", class="submit-button") Submit
+
+
+extend lyout 
+block content 
+    body 
+    h1 Form
+    form(action="/result",method="POST")
+      label(for="name") Name: 
+      input(type="text",name="name",required)
+      br
+      label(for="email") Email:
+      input(type="email",name="email",required)
+      br
+      button(type="submit") Submit

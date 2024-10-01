@@ -1,0 +1,21 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+h1 {
+    color: #333;
+}
+.article {
+    max-width: 600px;
+    margin: auto;
+}
+.date {
+    font-style: italic;
+    color: #666;
+}
